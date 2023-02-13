@@ -1,0 +1,17 @@
+{
+    "bindings": [
+        {
+            "type": "serviceBusAccount",
+            "queueName": "serviceBusAccount",
+            "access": "manage",
+            "direction": "in",
+            "name": "queueMessage"
+        },
+        {
+            "connection": "storageConnection"
+        }
+    ],
+    "disabled": false,
+    "scriptFile": "..\\Triggers.dll",
+    "entryPoint": "Triggers.ServiceBus.QueueTrigger.SendMessage"
+}
